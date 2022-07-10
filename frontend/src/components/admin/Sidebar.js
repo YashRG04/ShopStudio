@@ -1,6 +1,5 @@
 import React from "react";
 import "./sidebar.css";
-import logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
 import { TreeView, TreeItem } from "@material-ui/lab";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -16,7 +15,10 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <Link to="/">
-        <img src={logo} alt="ShopStudio" />
+        <img
+          src="https://res.cloudinary.com/yashrg04/image/upload/v1657434982/Profile_Founder/LOGO_SHOPPING_STUDIO_4_pvmurc.png"
+          alt="ShopStudio"
+        />
       </Link>
       <Link to="/admin/dashboard">
         <p>

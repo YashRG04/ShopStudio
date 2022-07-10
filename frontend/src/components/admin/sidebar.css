@@ -14,7 +14,7 @@
 }
 
 .sidebar > a > img:hover {
-  filter: drop-shadow(0 0 10px tomato);
+  filter: drop-shadow(0 0 10px rgb(33, 202, 75));
 }
 .sidebar a {
   text-decoration: none;
