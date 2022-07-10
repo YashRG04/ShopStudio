@@ -77,3 +77,24 @@ footer {
 .rightFooter > a:hover {
   color: #34eb62;
 }
+
+@media screen and (max-width: 600px) {
+  .leftFooter > img {
+    width: 5vmax;
+  }
+  .leftFooter > p {
+    display:none;
+  }
+  .rightFooter > a {
+    font-size: 1.2vmax;
+  }
+  .rightFooter > h4 {
+    font-size: 1.2vmax;
+  }
+  .midFooter > h1 {
+    font-size: 3.5vmax;
+  }
+  .midFooter > p {
+    font-size: 1.2vmax;
+  }
+}

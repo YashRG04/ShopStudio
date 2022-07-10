@@ -120,6 +120,7 @@
 .detailsBlock-4 {
   color: rgba(0, 0, 0, 0.897);
   font: 500 1.2vmax sans-serif;
+  align-items: center;
 }
 
 .detailsBlock-4 > p {
@@ -211,6 +212,9 @@
 }
 
 @media screen and (max-width: 700px) {
+  .carousel {
+    margin-left: 35%;
+  }
   .ProductDetails {
     flex-direction: column;
     height: unset;
@@ -275,10 +279,13 @@
 
   .detailsBlock-4 {
     font: 500 2.5vmax sans-serif;
+    margin-left: 30%;
+    align-items: center;
   }
 
   .detailsBlock-4 > p {
     font: 300 1.8vmax sans-serif;
+    margin-right: 20%;
   }
 
   .submitReview {
