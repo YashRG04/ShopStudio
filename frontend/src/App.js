@@ -71,11 +71,7 @@ function App() {
       <Header />
       {isAuthenticated && <UserOptions user={user} />}
 
-      {stripeApiKey && (
-        <Elements stripe={loadStripe(stripeApiKey)}>
-          <ProtectedRoute exact path="/process/payment" component={Payment} />
-        </Elements>
-      )}
+      
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/product/:id" component={ProductDetails} />
@@ -174,10 +170,14 @@ function App() {
 
         <Route exact path="/about" component={About}></Route>
 
+        {stripeApiKey && (
+        <Elements stripe={loadStripe(stripeApiKey)}>
+          <ProtectedRoute exact path="/process/payment" component={Payment} />
+        </Elements>
+      )}
+
         <Route
-          component={
-            window.location.pathname === "/process/payment" ? null : NotFound
-          }
+          component={NotFound}
         ></Route>
       </Switch>
 
